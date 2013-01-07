@@ -5,7 +5,7 @@ PDFMerger
 
 PDFMerger is a simple tool that allows you to merge multiple PDFs into a single PDF or batches of PDFs.
 
-![Screenshot](https://github.com/randyburden/PDFMerger/raw/master/assets/screenshot.pdf)
+![Screenshot](https://github.com/randyburden/PDFMerger/raw/master/assets/screenshot.png)
 
 ####Usage####
 
