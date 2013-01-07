@@ -56,4 +56,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 PDFsharp, Copyright (c) 2005-2012 empira Software GmbH, Troisdorf (Germany), was used as the primary PDF library. PDFsharp can be downloaded from their website at the following url: http://www.pdfsharp.net/ 
 PDFsharp also uses the MIT license and can be viewed here: http://www.pdfsharp.net/PDFsharp_License.ashx 
 
+Theme obtained from Nukeation Studios. Information on the theme library can be found at the following url: http://www.nukeation.com/free.aspx
+
 PDF icon obtained from the Open Icon Library. The icon can be downloaded from the following url: http://openiconlibrary.sourceforge.net/gallery2/?./Icons/apps/acroread.png 
