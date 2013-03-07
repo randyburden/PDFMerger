@@ -225,7 +225,7 @@ namespace PDFMerger.Views
             {
                 if ( int.TryParse( BatchSizeTextBox.Text, out batchSize ) == false )
                 {
-                    MessageBoxWrapper.Show( "Please intput a batch size", "Input a Batch Size", MessageBoxButton.OK, MessageBoxImage.Warning );
+                    MessageBoxWrapper.Show( "Please input a valid batch size.", "Input a Batch Size", MessageBoxButton.OK, MessageBoxImage.Warning );
 
                     BatchSizeTextBox.SelectAll();
 
@@ -268,17 +268,17 @@ namespace PDFMerger.Views
 
         public void IncrementProgressBar()
         {
-            FrameworkElementHelpers.SafelyAccess( ProgressBar, () => ProgressBar.Value = ProgressBar.Value + 1 );
+            ProgressBar.PerformAction( () => ProgressBar.Value++ );
         }
 
         public void EnableMergeButton()
         {
-            FrameworkElementHelpers.SafelyAccess( MergeButton, () => MergeButton.IsEnabled = true );
+            MergeButton.PerformAction( () => MergeButton.IsEnabled = true );
         }
 
         public void DisableMergeButton()
         {
-            FrameworkElementHelpers.SafelyAccess( MergeButton, () => MergeButton.IsEnabled = false );
+            MergeButton.PerformAction( () => MergeButton.IsEnabled = false );
         }
 
         public void ShowExceptionMessage( Exception ex )
@@ -302,7 +302,7 @@ namespace PDFMerger.Views
                     }
                 };
 
-            FrameworkElementHelpers.SafelyAccess( OutputFileTextBox, action );
+            OutputFileTextBox.PerformAction( action );
         }
 
         public void MergeAll( string fullOutputPath, string[] files )
@@ -323,7 +323,7 @@ namespace PDFMerger.Views
                 ShowExceptionMessage( ex );
             }
 
-            string message = string.Format( "Complete. Elapsed time: {0}", StopwatchHelper.GetElapsedTime( stopwatch ) );
+            string message = string.Format( "Complete. Elapsed time: {0}", stopwatch.GetElapsedTimeString() );
 
             MessageBoxWrapper.Show( message, "Complete", MessageBoxButton.OK, MessageBoxImage.Information );
 
@@ -381,7 +381,7 @@ namespace PDFMerger.Views
             }
 
 
-            string message = string.Format( "Complete. Elapsed time: {0}", StopwatchHelper.GetElapsedTime( stopwatch ) );
+            string message = string.Format( "Complete. Elapsed time: {0}", stopwatch.GetElapsedTimeString() );
 
             MessageBoxWrapper.Show( message, "Complete", MessageBoxButton.OK, MessageBoxImage.Information );
 

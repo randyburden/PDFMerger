@@ -9,7 +9,7 @@ namespace PDFMerger.Helpers
         /// Returns the elapsed time of the stopwatch
         /// </summary>
         /// <returns>A string with a customized output of the elapsed time</returns>
-        public static string GetElapsedTime( Stopwatch stopWatch )
+        public static string GetElapsedTimeString( this Stopwatch stopWatch )
         {
             TimeSpan ts = stopWatch.Elapsed;
             string elapsedTime;

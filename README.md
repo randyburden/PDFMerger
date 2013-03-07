@@ -5,6 +5,8 @@ PDFMerger
 
 PDFMerger is a simple tool that allows you to merge multiple PDFs into a single PDF or batches of PDFs.
 
+Download the latest executable version from SourceForge: http://sourceforge.net/projects/pdfmergertool/
+
 ![Screenshot](https://github.com/randyburden/PDFMerger/raw/master/assets/screenshot.png)
 
 ####Usage####
